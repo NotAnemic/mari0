@@ -27,9 +27,6 @@
         <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
         <canvas id="loadingCanvas" oncontextmenu="event.preventDefault()" width="800" height="600"></canvas>
       </div>
-      <p>By Stabyourself.net</p>
-      <p><a href="http://stabyourself.net/mari0/">Original Download Page</a></p>
-      <p><a href="https://github.com/radgeRayden/future-mari0">Updated Source Code for Love v0.10.0</a></p>
     </center>
 
     <script type='text/javascript'>
@@ -91,7 +88,7 @@
       Module.setStatus('Downloading...');
       window.onerror = function(event) {
         // TODO: do not warn on ok events like simulating an infinite loop or exitStatus
-        Module.setStatus('Exception thrown, see JavaScript console');
+        Module.setStatus('An error has occurred, please refresh');
         Module.setStatus = function(text) {
           if (text) Module.printErr('[post-exception status] ' + text);
         };
